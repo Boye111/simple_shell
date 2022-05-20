@@ -52,7 +52,6 @@ Files contained and description:
 4. path.c
     Handles paths to be executed
 
-
 5. shell.h
     Contains all Prototypes and struct variables
 
@@ -61,6 +60,8 @@ Files contained and description:
 
 7. man_3_simple_shell
 
+
+Team:
 
 *Adeboye Akingbelure* - [Github](https://github.com/Boye111)
 
