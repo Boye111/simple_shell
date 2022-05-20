@@ -2,7 +2,7 @@
 /**
  * path_execute - path to be executed
  * @command: full path to a command
- * @var: pointer 
+ * @var: pointer
  * Description: Executes a command in the path
  * Return: 0 or 1
  */
@@ -18,7 +18,7 @@ int path_execute(char *command, t_var *var)
 		if (child_pid == 0)
 		{
 			if (execve(command, var->av, var->env) == -1)
-				print_errpr(var, NULL);
+				print_error(var, NULL);
 		}
 		else
 		{
@@ -43,7 +43,7 @@ int path_execute(char *command, t_var *var)
 /**
  * find_path - find path of a variable
  * @env: array of environmental variables
- * Description: finds PATH 
+ * Description: finds PATH
  * Return: node that contains path or failure
  */
 char *find_path(char **env)
@@ -88,7 +88,7 @@ void check_for_path(t_var *var)
 				check = _strcat(path_tokens[i], var->av[0]);
 				if (stat(check, &buf) == 0)
 				{
-					r = path_execute(checl, var);
+					r = path_execute(check, var);
 					free(check);
 					break;
 				}
@@ -137,9 +137,9 @@ int execute_cwd(t_var *var)
 			{
 				wait(&var->ext_status);
 				if (WIFEXITED(var->ext_status))
-					var->ext_status = WEXITSTATUS(var->ext_status)
+					var->ext_status = WEXITSTATUS(var->ext_status);
 				else if (WIFSIGNALED(var->ext_status)
-						&&WTERMSIG(var->ext_status) == SIGINT)
+						&& WTERMSIG(var->ext_status) == SIGINT)
 					var->ext_status = 130;
 				return (0);
 			}
