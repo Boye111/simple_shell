@@ -1,0 +1,35 @@
+.TH simple_shell "20 May 2022" "version 1.0"
+
+.SH NAME
+.B hsh
+
+.BI simple_shell
+- Writing a simple UNIX command interpreter.
+
+.SH SYNOPSIS
+- gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+
+.SH DESCRIPTION
+- This is a simple UNIX command interpreter.
+
+.SH BUILTIN COMMANDS
+
+.B cd
+- changes the working directory.
+
+.B env
+- print the environment
+
+.B exit
+- exit the shell gracefully.
+
+.B setenv
+- set an environmental variable.
+
+.SH BUGS
+- None encountered yet.
+
+.SH AUTHORS
+
+Kabingu Sammy.
+Adeboye Akingbelure.
