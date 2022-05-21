@@ -96,6 +96,13 @@ Files contained and description:
 
 7. man_3_simple_shell
 
+8. tokenize.c
+
+9. strtok.c
+
+10. function.c
+
+11. functions.c
 
 Team:
 
