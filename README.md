@@ -79,30 +79,32 @@ Files contained and description:
 1. builtin.c
     Handles builtin in the shell environment.
 
-2. code.c
+2. builtins.c
+
+3. code.c
     Entry point to the program.
 
-3. env.c 
+4. env.c 
     Handles envrionment variables
 
-4. path.c
+5. path.c
     Handles paths to be executed
 
-5. shell.h
+6. shell.h
     Contains all Prototypes and struct variables
 
-6. simple_shell.c
+7. simple_shell.c
     Entry point to the main program.
 
-7. man_3_simple_shell
+8. man_3_simple_shell
 
-8. tokenize.c
+9. tokenize.c
 
-9. strtok.c
+10. strtok.c
 
-10. function.c
+11. function.c
 
-11. functions.c
+12. functions.c
 
 Team:
 
